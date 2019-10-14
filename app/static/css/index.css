@@ -9,3 +9,9 @@
  a{
      text-decoration: none;
  }
+ .card{
+    box-shadow:5px 5px grey;
+}
+.card:hover{
+    transform: scale(1.1);
+}
