@@ -1,0 +1,35 @@
+{% macro displayNewsList(news_results) %}
+
+{% for result in news_results %}
+
+<div class="col-md-4 mt">
+    <div class="card ">
+        <div class="card-header text-center">
+            <a id="read" class="header section-link" href="/news/{{result.id}}"><h1>{{result.name}}</h1></a>
+        </div>
+        <div class="card-body">
+            <p class="description">{{result.description|truncate(150)}}</p>
+        </div>
+        <div class="card-footer bg-primary text-white">
+        </div>
+    </div>
+</div>
+
+{% endfor %}
+{% endmacro %}
+
+{%  macro Article(article_result) %}
+{% for arts in article_result %}
+<div class="col-md-4 mt-">
+    <div class="card h-100">
+        <div class="card-header">published on:{{arts.publishedAt}}</div>
+        <img class="card-img-top h-50" src="{{arts.urlToImage}}"  alt="{{arts.name}}">
+        <div class="card-body">
+          <h4 class="card-title">By:{{arts.author}}</h4>
+          <p class="card-text">{{arts.description |truncate(200)}}</p>
+          <a href="{{arts.url}}"  target="_blank" class="btn btn-primary stretched-link">Read more....</a>
+        </div>
+      </div>
+</div>
+{% endfor %}
+{% endmacro %}
