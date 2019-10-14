@@ -76,4 +76,15 @@ def process_article(article_list):
                 articles_results.append(article_result)
     return articles_results
 
+def search_news(name):
+    #search_movie_url = 'https://api.themoviedb.org/3/search/movie?api_key={}&query={}'.format(api_key,movie_name)
+    search_movie_url = 'https://newsapi.org/v2/everything?q={}&apiKey={}'.format(name,api_key)
+    search_movie_response = requests.get(search_movie_url).json()
+
+    if search_movie_response['articles']:
+        search_movie_list = search_movie_response['articles']
+        search_movie_results = process_article(search_movie_list) 
+
+    return search_movie_results   
+
     
