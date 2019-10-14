@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
 
 
- h1{
+ h3{
      text-align: center;
-     color: green;
+     color: black;
      font-family: 'Carter One', cursive;
+ }
+ a{
+     text-decoration: none;
  }
