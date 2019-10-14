@@ -6,6 +6,9 @@
 ## Description
 This is a project that enable users to get access to various news sources and articles in the world
 
+## Project live site
+  This is the live .[ Click for the demo](https://newshighlight1.herokuapp.com/)
+ ![Image](app/static/images/Selection_030.png)
 ## Features
 * landing page containing news sources
 * clickable news headlines
