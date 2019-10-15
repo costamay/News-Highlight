@@ -49,9 +49,9 @@ This is a project that enable users to get access to various news sources and ar
 
 3.cd into the project folder and open in text editor.
 
-4.Then run chmod +x start.py on your project directory.
+4.Then run chmod +x start.sh on your project directory.
 
-5.Run  ./start.py to launch the program.
+5.Run  ./start.sh to launch the program.
 
 ## Technologies Used
 * PYTHON
