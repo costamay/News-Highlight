@@ -10,8 +10,8 @@
      text-decoration: none;
  }
  .card{
-    box-shadow:5px 5px grey;
+    box-shadow:5px 5px black;
 }
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(0.5);
 }
