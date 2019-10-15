@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_bootstrap import Bootstrap
 from config import Config
-
+ 
 bootstrap = Bootstrap() 
 
 def create_app():
