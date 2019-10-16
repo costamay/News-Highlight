@@ -3,10 +3,10 @@
 {% for result in news_results %}
 
 <div class="col-md-4 mt-2">
-        <a id="read" class="header section-link" href="/news/{{result.id}}">
+        
     <div class="card ">
         <div class="card-header bg-warning text-center">
-            <h3>{{result.name }}</h3>
+            <a id="read" class="header section-link" href="/news/{{result.id}}"> <h3>{{result.name }}</h3></a>
         </div>
         <div class="card-body">
             <p class="description">{{result.description|truncate(100)}}</p>
@@ -14,7 +14,7 @@
         
         
     </div>
-</a>
+
 </div>
 
 {% endfor %}
