@@ -7,11 +7,13 @@
      font-family: 'Carter One', cursive;
  }
  a, a:hover{
-     text-decoration: none;
+     text-decoration: rgb(red, green, blue);
  }
  .card{
     box-shadow:5px 5px black;
+    
 }
- .card:hover{
-     transform: scale(0.9)
- }
+.card:hover{
+    transform: scale(1.1);
+}
+ 
